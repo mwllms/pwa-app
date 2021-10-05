@@ -9,6 +9,7 @@ function sendHeight() {
 }
 
 export default () => {
+  console.log('hello page')
   // Create browser compatible event handler.
   if (process.client) {
     const eventMethod = window.addEventListener
