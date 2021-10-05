@@ -22,6 +22,7 @@ export default () => {
     eventer(
       messageEvent,
       function (e) {
+        console.log('eventer', e)
         if (isNaN(e.data)) return
         sendHeight()
       },
