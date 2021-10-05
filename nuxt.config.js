@@ -36,10 +36,6 @@ export default {
     '@nuxtjs/pwa',
   ],
 
-  router: {
-    middleware: 'sendHeight',
-  },
-
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
