@@ -16,14 +16,13 @@ export default () => {
   const messageEvent = eventMethod === 'attachEvent' ? 'onmessage' : 'message'
 
   // Listen for a message from the iframe.
-  setTimeout(() => {
-    eventer(
-      messageEvent,
-      function (e) {
-        if (isNaN(e.data)) return
-        sendHeight()
-      },
-      false
-    )
-  }, 500)
+
+  eventer(
+    messageEvent,
+    function (e) {
+      if (isNaN(e.data)) return
+      sendHeight()
+    },
+    false
+  )
 }
