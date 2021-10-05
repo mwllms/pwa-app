@@ -2,7 +2,7 @@ function sendHeight() {
   if (parent.postMessage) {
     // replace #wrapper with element that contains
     // actual page content
-    const height = document.getElementById('wrapper').offsetHeight
+    const height = document.getElementById('__nuxt').offsetHeight
     parent.postMessage(height, '*')
   }
 }
